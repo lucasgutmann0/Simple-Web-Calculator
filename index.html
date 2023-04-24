@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cargamos una tipografia desde google fonts -> montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cargando los estilos -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- cargando el javascript -->
+    <script defer src="./js/app.js"></script>
+    <!-- nombre del documento -->
+    <title>Calculadora Simple</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="calc-wrapper">
+        <div class="screen-wrapper">
+          <!-- readonly para que no se pueda editar asi -->
+          <input class="screen" id="screen-display" readonly type="text" />
+        </div>
+        <div class="btn-grid">
+          <!-- primera fila -->
+          <button id="btn-clear" class="col-span-2 btn-des">ac</button>
+          <button id="btn-del" class="btn-des">del</button>
+          <button id="btn-op-suma" class="btn-func">+</button>
+          <!-- segunda fila -->
+          <button id="btn-7">7</button>
+          <button id="btn-8">8</button>
+          <button id="btn-9">9</button>
+          <button id="btn-op-resta" class="btn-func">-</button>
+          <!-- tercera fila -->
+          <button id="btn-4">4</button>
+          <button id="btn-5">5</button>
+          <button id="btn-6">6</button>
+          <button id="btn-op-div" class="btn-func">/</button>
+          <!-- cuarta fila -->
+          <button id="btn-1">1</button>
+          <button id="btn-2">2</button>
+          <button id="btn-3">3</button>
+          <button id="btn-op-mult" class="btn-func">*</button>
+          <!-- quinta fila -->
+          <button id="btn-0" class="col-span-2">0</button>
+          <button id="btn-dot">.</button>
+          <button id="btn-res" class="btn-res">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

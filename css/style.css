@@ -1,0 +1,123 @@
+/* 
+  se resetean los estilos para
+  evitar problemas de espacios injustificados
+  el * indica todo
+ */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.main-container {
+  width: 100%;
+  background: #1e293b;
+  /* NOTE: 
+    100vh -> todo alto de la pantalla
+    min height es para indicar el alto minimo que puede
+    tener en este caso este div que es el principal que
+    contiene todo  `
+  */
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-wrapper {
+  border-radius: 10px;
+  width: 20rem;
+  background-color: #e5e7eb;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+}
+
+/* estilo general de botones */
+.btn-grid button {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: white;
+  background: #94a3b8;
+  width: 100%;
+  border: 0;
+  height: 3.5rem;
+  border-radius: 10px;
+  /* agregar transicion */
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+/* estilo para botones diferentes a numericos */
+.btn-grid .btn-func {
+  background: #0ea5e9;
+}
+
+/* estilo para boton de respuesta */
+.btn-grid .btn-res {
+  background: #f59e0b;
+}
+
+/* estilo para botones de borrar o limpiar */
+.btn-grid .btn-des {
+  background: #dc2626;
+}
+
+/* CUANDO PASEN EL MOUSE SOBRE ALGUN BOTON */
+.btn-grid button:hover {
+  background: #64748b;
+}
+
+.btn-grid .btn-func:hover {
+  background: #0284c7;
+}
+
+.btn-grid .btn-des:hover {
+  background: #b91c1c;
+}
+
+.btn-grid .btn-res:hover {
+  background: #d97706;
+}
+
+/* cuando se clickee el boton */
+.btn-grid button:active {
+  transform: scale(0.96);
+}
+
+
+.screen-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  padding-inline: 1rem;
+  font-size: 1.4rem;
+  width: 90%;
+  height: 10rem;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.calc-wrapper {
+  display: flex;
+  flex-direction: column;
+}
